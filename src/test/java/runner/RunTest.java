@@ -8,10 +8,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 // Uncomment @RunWith if you are using Junit to run Test 
 // @RunWith(Cucumber.class)
 
-@CucumberOptions(features={"src//test//java//features"},
-					glue={"stepdefinitions","utility"},
-                    plugin = {"pretty","html:target/cucumber-reports"},
-					tags ={"@sanity"},
+@CucumberOptions(features={"src/test/java/features"},
+					glue={"stepdefinitions"},
+					 plugin={"pretty" },
+		             tags={"@sanity"},
 					monochrome = true
 		)
 @Test
